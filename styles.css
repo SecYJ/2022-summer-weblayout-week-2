@@ -70,6 +70,10 @@ body {
 	color: #fff;
 }
 
+.section-works {
+	--padding-bottom: 9rem;
+}
+
 .section-description[data-description="works"] {
 	margin-bottom: 3.5rem;
 }
@@ -182,13 +186,16 @@ body {
 }
 /* About end */
 
+/* Brand 开始 */
 .brand-images {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 2.5rem 1.5rem;
 }
+/* Brand 结束 */
 
+/* Works 结束 */
 .works-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -201,10 +208,7 @@ body {
 	font-size: 1.25rem;
 	line-height: 2.1;
 }
-
-.section-works {
-	--padding-bottom: 9rem;
-}
+/* Works 开始 */
 
 /* Footer start */
 .footer {
