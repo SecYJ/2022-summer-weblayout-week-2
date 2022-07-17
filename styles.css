@@ -188,6 +188,7 @@ body {
 	border-radius: 50%;
 	background-color: #891818;
 	position: absolute;
+	/* red circle = 22px, 1rem = red circle和 li 的间距 */
 	left: calc(-1rem - 22px);
 	top: 50%;
 	transform: translateY(-50%);
