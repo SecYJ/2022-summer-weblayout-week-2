@@ -51,7 +51,8 @@ body {
 
 .section-description {
 	font-size: 1.25rem;
-	line-height: 1.5;
+	line-height: 1.75;
+	/* line-height: 1.5; */
 }
 
 .section-banner {
@@ -88,10 +89,14 @@ body {
 	font-size: inherit;
 	text-align: left;
 	color: #fff;
+	display: flex;
+	flex-direction: column;
+	/* 下 flex 主要是解决span是inline元素无法调整 line-height */
 }
 
 .banner-intro span:nth-child(1) {
 	line-height: 1.75;
+	/* line-height: 1.3333; */
 }
 
 .banner-intro strong {
@@ -99,7 +104,6 @@ body {
 	line-height: 1.325;
 	font-weight: 900;
 	margin-bottom: 2rem;
-	display: block;
 }
 
 .social-links {
@@ -128,6 +132,7 @@ body {
 .title-sub {
 	margin-bottom: 2rem;
 	line-height: 1.75;
+	/* line-height: 1.3333; */
 }
 
 .title[data-title="about"] {
@@ -148,9 +153,10 @@ body {
 .education-list {
 	margin-top: 1.25rem;
 	margin-bottom: 1.75rem;
-	padding-bottom: 1.5rem;
+	padding-bottom: 23px;
 	border-bottom: 1px solid #000;
 	line-height: 1.75;
+	/* line-height: 1.3333; */
 }
 
 .education-list li:first-child {
@@ -168,6 +174,7 @@ body {
 	align-items: center;
 	gap: 1.75rem;
 	line-height: 1.75;
+	/* line-height: 1.3333; */
 }
 
 .positions-list li {
@@ -208,6 +215,7 @@ body {
 	margin-top: 1rem;
 	font-size: 1.25rem;
 	line-height: 2.1;
+	/* line-height: 1.4; */
 }
 /* Works 开始 */
 
@@ -227,5 +235,6 @@ body {
 .contacts-list a {
 	color: currentColor;
 	display: block;
+	/* line-height: 1.375; */
 }
 /* Footer end */
