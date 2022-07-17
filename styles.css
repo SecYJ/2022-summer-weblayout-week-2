@@ -1,0 +1,226 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	line-height: 1.5;
+	font-style: italic;
+	font-size: 24px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	text-align: center;
+}
+
+.container {
+	max-width: 1200px;
+	margin-inline: auto;
+}
+
+/* section 的 css 开始 */
+
+.section {
+	padding-top: var(--padding-top, 3.5rem);
+	padding-bottom: var(--padding-bottom, 3.5rem);
+}
+
+.section-description {
+	font-size: 1.25rem;
+	line-height: 1.5;
+}
+
+.section-banner {
+	background-image: url(./images/banner.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 958px;
+	background-position: center;
+	display: grid;
+	place-content: center;
+}
+
+.section-brand {
+	--padding-bottom: 10rem;
+	background-color: #000;
+	color: #fff;
+}
+
+.section-description[data-description="works"] {
+	margin-bottom: 3.5rem;
+}
+
+.section-description[data-description="brand"] {
+	margin-bottom: 4.25rem;
+}
+/* section 的 css 结束 */
+
+/* Banner css 开始 */
+.banner-intro {
+	font-size: inherit;
+	text-align: left;
+	color: #fff;
+}
+
+.banner-intro span:nth-child(1) {
+	line-height: 1.75;
+}
+
+.banner-intro strong {
+	font-size: 5rem;
+	line-height: 1.325;
+	font-weight: 900;
+	margin-bottom: 2rem;
+	display: block;
+}
+
+.social-links {
+	margin-top: 2.5rem;
+	display: flex;
+	column-gap: 1rem;
+}
+
+.about {
+	/* 其实这段也可以但是感觉用 flex 更好 ? */
+	/* width: max-content;
+	margin-inline: auto; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 700;
+}
+
+/* title 设定开始 */
+.title {
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.3125;
+}
+
+.title-sub {
+	margin-bottom: 2rem;
+}
+
+.title[data-title="about"] {
+	margin-bottom: 2.5rem;
+}
+
+.title[data-title="brand"] {
+	margin-bottom: 0.75rem;
+}
+
+.title[data-title="footer"],
+.title[data-title="works"] {
+	margin-bottom: 1rem;
+}
+/* title 设定结束 */
+
+/* About start */
+.education-list {
+	margin-top: 1.25rem;
+	margin-bottom: 1.75rem;
+	padding-bottom: 1.5rem;
+	border-bottom: 1px solid #000;
+	line-height: 1.75;
+}
+
+.education-list li:first-child {
+	margin-bottom: 0.25rem;
+}
+
+.education-list li:last-child {
+	margin-top: 0.5rem;
+	line-height: 1.5;
+}
+
+.positions-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.75rem;
+	line-height: 1.75;
+}
+
+.positions-list li {
+	position: relative;
+}
+
+.positions-list li::before {
+	content: "";
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background-color: #891818;
+	position: absolute;
+	left: calc(-1rem - 22px);
+	top: 50%;
+	transform: translateY(-50%);
+}
+/* About end */
+
+.brand-images {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2.5rem 1.5rem;
+}
+
+.works-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 3rem;
+}
+
+.works-list h3 {
+	margin-top: 1rem;
+	font-size: 1.25rem;
+	line-height: 2.1;
+}
+
+.section-works {
+	--padding-bottom: 9rem;
+}
+
+/* Footer start */
+.footer {
+	--padding: 4rem;
+	--padding-top: var(--padding);
+	--padding-bottom: var(--padding);
+	background-color: #000;
+	color: #fff;
+}
+
+.contacts-list li:first-child {
+	margin-bottom: 1rem;
+}
+
+.contacts-list a {
+	color: currentColor;
+	display: block;
+}
+/* Footer end */
