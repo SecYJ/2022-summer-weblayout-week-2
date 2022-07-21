@@ -120,6 +120,14 @@ body {
 	column-gap: 1rem;
 }
 
+.social-links img {
+	transition: transform 300ms ease-in-out;
+}
+
+.social-links img:hover {
+	transform: scale(1.05);
+}
+
 .about {
 	/* 其实这段也可以但是感觉用 flex 更好 ? */
 	/* width: max-content;
