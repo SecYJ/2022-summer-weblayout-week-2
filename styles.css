@@ -30,7 +30,6 @@ a {
 
 body {
 	line-height: 1.5;
-	font-style: italic;
 	font-size: 24px;
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
@@ -42,11 +41,17 @@ body {
 	margin-inline: auto;
 }
 
+/* utilities */
+.italic {
+	font-style: italic;
+}
+
 /* section 的 css 开始 */
 
 .section {
-	padding-top: var(--padding-top, 3.5rem);
-	padding-bottom: var(--padding-bottom, 3.5rem);
+	/* padding-top: var(--padding-top, 3.5rem);
+	padding-bottom: var(--padding-bottom, 3.5rem); */
+	padding-top: 3.5rem;
 }
 
 .section-description {
@@ -66,13 +71,15 @@ body {
 }
 
 .section-brand {
-	--padding-bottom: 10rem;
+	/* --padding-bottom: 10rem; */
+	padding-bottom: 10rem;
 	background-color: #000;
 	color: #fff;
 }
 
 .section-works {
-	--padding-bottom: 9rem;
+	/* --padding-bottom: 9rem; */
+	padding-bottom: 9rem;
 }
 
 .section-description[data-description="works"] {
@@ -89,14 +96,15 @@ body {
 	font-size: inherit;
 	text-align: left;
 	color: #fff;
-	display: flex;
-	flex-direction: column;
-	/* 下 flex 主要是解决span是inline元素无法调整 line-height */
 }
 
-.banner-intro span:nth-child(1) {
+.banner-intro p:first-of-type {
 	line-height: 1.75;
 	/* line-height: 1.3333; */
+}
+
+.banner-intro h1 {
+	margin-bottom: 2rem;
 }
 
 .banner-intro strong {
@@ -216,15 +224,17 @@ body {
 	margin-top: 1rem;
 	font-size: 1.25rem;
 	line-height: 2.1;
+	font-weight: 500;
 	/* line-height: 1.4; */
 }
 /* Works 开始 */
 
 /* Footer start */
 .footer {
-	--padding: 4rem;
+	/* --padding: 4rem;
 	--padding-top: var(--padding);
-	--padding-bottom: var(--padding);
+	--padding-bottom: var(--padding); */
+	padding-block: 4rem;
 	background-color: #000;
 	color: #fff;
 }
@@ -237,5 +247,9 @@ body {
 	color: currentColor;
 	display: block;
 	/* line-height: 1.375; */
+}
+
+.contacts-list a:hover {
+	opacity: 0.75;
 }
 /* Footer end */
