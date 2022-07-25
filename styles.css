@@ -48,11 +48,14 @@ body {
 
 /* section 的 css 开始 */
 
-.section,
-.section-about {
+.section {
 	/* padding-top: var(--padding-top, 3.5rem);
 	padding-bottom: var(--padding-bottom, 3.5rem); */
 	padding-top: 3.5rem;
+}
+
+.section-about {
+	padding-bottom: 3.5rem;
 }
 
 .section-description {
